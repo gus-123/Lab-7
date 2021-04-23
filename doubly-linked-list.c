@@ -15,15 +15,15 @@
 #include<stdlib.h>
 /* 필요한 헤더파일 추가 if necessary */
 
-
+//연결 리스트의 노드 구조를 구조체로 정의
 typedef struct Node {
 	int key;
-	struct Node* llink;
-	struct Node* rlink;
+	struct Node* llink;  //왼쪽(이전) 노드에 대한 링크
+	struct Node* rlink;  //오른쪽(다음) 노드에 대한 링크
 } listNode;
 
 
-
+//리스트 시작을 나타내는 Head 노드를 구조체로 정의
 typedef struct Head {
 	struct Node* first;
 }headNode;
